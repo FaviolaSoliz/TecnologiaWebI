@@ -1,0 +1,12 @@
+{
+    "nombre": "Cochabamba",
+    "foto": "cbba.jpg",
+    "slogan": "Ciudad Jardin",
+    "fundacion": 1571,
+    "poblacion": 1916000,
+    "events" : [
+      "29 de Febrero: Corso de corsos",
+      "15 de Agosto: Fiesta de Urkupiña",
+      "14 de Septiembre: Aniversario de Cochabamba"
+    ]
+  }

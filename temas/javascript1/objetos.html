@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos en Javascript</title>
+</head>
+<body>
+	<script>
+		// Los objetos son variables que pueden contener muchos valores.
+		// Un ojeto es similar a un arreglo.
+
+		// Los objetos pueden contener propiedades (variables), y metodos (funciones)
+
+		var nombre = 'Carlos';
+		var edad = 20;
+		var pais = 'Bolivia';
+
+		var nombreHermano = 'Christian';
+		var edadHermano = '17';
+		var paisHermano = 'España';
+
+		var nombrePapa = 'Arturo';
+		var edadPapa = '37';
+		var paisPapa = 'Mexico';
+
+// Convirtiendo el ejemplo anterior a objetos
+		var carlos = {
+			nombre: 'Carlo',
+			edad: 20,
+			pais: 'Bolivia',
+			// Los metodos son funciones dentro de un objeto
+			bio: function(){
+				return this.nombre + ' tiene ' + this.edad + ' años';
+			}
+		}
+
+		var christian = {
+			nombre: 'Christian',
+			edad: 22,
+			pais: 'España',
+			bio: function(){
+				return this.nombre + ' tiene ' + this.edad + ' años';
+			}
+		}
+
+		document.write(carlos.bio());
+		document.write(christian.pais);
+
+// ----- ----- ----- ----- ----- ----- ----- ----- 
+// Usando un constructor de Objetos
+// El constructor de objetos nos permite crear objetos conforme los necesitemos.
+// En vez de escribirlos al inicio.
+
+	function persona(nombre, edad, pais){
+		this.nombre = nombre;
+		this.edad = edad;
+		this.pais = pais;
+	}
+
+	var papa = new persona('Carlos', 20, 'Mexico');
+	var amigo = new persona('Alex', 32, 'España');
+	var hermano = new persona('Christopher', 32, 'Colombia');
+
+	document.write(papa.nombre);
+	document.write('<br>');
+	document.write(hermano.edad);
+
+	</script>
+</body>
+</html>

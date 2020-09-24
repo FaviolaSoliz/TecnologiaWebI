@@ -1,0 +1,19 @@
+body {
+	font-family: sans-serif, Helvetica, Arial;
+}
+
+h1 {
+	font-family: "Times New Roman";
+	
+	font-size:30px;
+	font-style:italic;
+	font-weight:bold;
+	color:#c5107a;
+	text-align:center;
+	text-decoration: none;
+	text-transform:lowercase;
+	letter-spacing: 20px;
+}
+p {
+	line-height: 40px;
+}
